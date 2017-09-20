@@ -11,37 +11,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="336dp">
+        android:weightSum="1">
 
-    <EditText
-        android:id="@+id/edEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Isi text"
-        android:layout_alignTop="@+id/txtText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="29dp" />
-
+        <EditText
+            android:id="@+id/edEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Isi text"
+            android:layout_above="@+id/linearLayout"
+         />
 
         <Button
             android:id="@+id/btnButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-
             android:layout_below="@+id/edEditText"
             android:backgroundTint="@android:color/holo_blue_bright"
             android:text="Tambah Data" />
 
         <TextView
-       android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        android:layout_marginTop="25dp"
-        android:id="@+id/txtText"/>
-</LinearLayout>
+            android:id="@+id/txtText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+ />
+    </LinearLayout>
+
+
 </RelativeLayout>
